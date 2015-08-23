@@ -18,15 +18,21 @@ From the source folder the following command allows this:
 swipl ../data/<file> main.pl
 ```
 ## Provided commands
-* find_optimal(-Solution)<br>
-  Searches the optimal parallel execution schedule, minimizing execution time
+* `find_optimal(-Solution)`
+  <br>
+  Searches the optimal parallel execution schedule, minimizing execution time.
+  <br>
   **IMPORTANT**: use this only on small DAGs, since this is NP-hard!
-* find_heuristically(-Solution)
+* `find_heuristically(-Solution)`
+  <br>
   Searches for an execution schedule, approximately miniminzing execution time.
   This done via the HEFT algorithm.
-* pretty_print(+Solution)
+* `pretty_print(+Solution)`
+  <br>
   Prints a found solution in a readable fashion
-* speedup(+Solution,-Result)
+* `speedup(+Solution,-Result)`
+  <br>
   Calculates the speedup of a found solution.
-* execution_time(+Solution,-Result)
+* `execution_time(+Solution,-Result)`
+  <br>
   Calculates the execution time of a founs solution.
